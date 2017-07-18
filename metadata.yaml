@@ -1,0 +1,22 @@
+name: mock
+summary: Build rpm packages inside a chroot
+maintainer: root <root@JUJU-LXDLOCALCLOUD>
+description: |
+  Mock creates chroots and builds rpms in them. Its only task is to
+  reliably populate a chroot and attempt to build a package in that
+  chroot. It is used be the Fedora Extras project to build their
+  packages cleanly.
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - misc
+subordinate: false
+provides:
+  provides-relation:
+    interface: interface-name
+requires:
+  requires-relation:
+    interface: interface-name
+peers:
+  peer-relation:
+    interface: interface-name
